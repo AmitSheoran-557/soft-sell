@@ -61,7 +61,7 @@ const Contact = () => {
                                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                             </div>
 
-                            <button type="submit" className="py-2 px-6 lg:text-lg rounded-sm border-blue-500 border-1 hover:border-transparent bg-transparent hover:bg-white hover:text-black transition-all ease-linear duration-300">
+                            <button type="submit" className="py-2 cursor-pointer px-6 lg:text-lg rounded-sm border-blue-500 border-1 hover:border-transparent bg-transparent hover:bg-white hover:text-black transition-all ease-linear duration-300">
                                 Submit
                             </button>
                         </form>

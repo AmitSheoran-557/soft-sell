@@ -7,7 +7,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const ChooseUs = () => {
     useEffect(() => {
         const mm = gsap.matchMedia();
-
         mm.add("(min-width: 769px)", () => {
             gsap.registerPlugin(ScrollTrigger);
             gsap.from(".choose-us-card", {
@@ -47,12 +46,10 @@ const ChooseUs = () => {
                     end: "bottom 60%",
                     scrub: 3,
                     duration: 3,
-                    markers: true
                 }
             });
         })
     }, []);
-
 
     return (
         <div className="2xl:py-36 xl:py-28 lg:py-20 md:py-16 py-12 px-4 -mt-1 relative choose-us-container overflow-hidden">

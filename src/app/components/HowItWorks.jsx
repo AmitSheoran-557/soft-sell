@@ -5,9 +5,9 @@ import DarkModeToggle from './DarkModeToggle';
 
 const HowItWorks = () => {
     return (
-        <div id="how-it-works" className="py-36 relative">
+        <div id="how-it-works" className=" 2xl:py-36 xl:py-28 lg:py-20 md:py-16 py-12 relative">
             <div className="container mx-auto px-4 max-w-6xl">
-                <div className='flex justify-center lg:mb-5 mb-4 top-12 absolute left-0 right-0'>
+                <div className='flex justify-center lg:mb-5 mb-4 top-12   left-0 right-0'>
                     <DarkModeToggle />
                 </div>
 
