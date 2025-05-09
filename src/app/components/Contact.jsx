@@ -45,12 +45,12 @@ const Contact = () => {
 
                             <div>
                                 <label className="block mb-1">License Type</label>
-                                <select {...register('license', { required: 'License type is required' })} className="w-full p-3 rounded bg-white/10 border border-zinc-300 outline-none dark:border-zinc-700" >
-                                    <option value="">Select type</option>
-                                    <option value="Windows">Windows</option>
-                                    <option value="Adobe">Adobe</option>
-                                    <option value="Office365">Office 365</option>
-                                    <option value="Other">Other</option>
+                                <select {...register('license', { required: 'License type is required' })} className="w-full p-3 rounded border border-zinc-300 outline-none dark:border-zinc-700" >
+                                    <option className='bg-slate-400' value="">Select type</option>
+                                    <option className='bg-slate-400' value="Windows">Windows</option>
+                                    <option className='bg-slate-400' value="Adobe">Adobe</option>
+                                    <option className='bg-slate-400' value="Office365">Office 365</option>
+                                    <option className='bg-slate-400' value="Other">Other</option>
                                 </select>
                                 {errors.license && <p className="text-red-500 text-sm mt-1">{errors.license.message}</p>}
                             </div>

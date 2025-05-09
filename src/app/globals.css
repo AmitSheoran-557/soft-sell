@@ -8,14 +8,11 @@
 }
 
 @layer base {
-
-    /* Set default light theme */
     body {
         background-color: #e1e7eb;
         color: #000000 !important;
     }
 
-    /* Set dark theme */
     .dark body {
         background-color: #000000 !important;
         color: white !important;
