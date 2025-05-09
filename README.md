@@ -27,7 +27,7 @@ A single-page responsive marketing website for SoftSell, a fictional software re
 - **Font**: `Poppins` for a clean modern look
 - **UI**: Clean, minimal, and trustworthy tone
 - Used Tailwind’s utility classes for fast and consistent styling
-- framer motion for subtle scroll-based animations
+- Used GSAP and framer motion for subtle scroll-based animations
 
 ---
 

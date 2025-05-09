@@ -87,3 +87,19 @@ export const SOCIAL_LINKS = [
     { href: 'https://www.instagram.com/', icon: <InstagramIcon /> },
     { href: 'https://www.facebook.com/', icon: <FacebookIcon /> },
 ];
+export const TESTIMONIALS_DATA_LIST = [
+    {
+        name: 'Emily Carter',
+        role: 'Product Manager',
+        company: 'TechNova Inc.',
+        image: '/assets/images/png/testimonials-card-profile-img-1.webp',
+        feedback: 'SoftSell made software license selling effortless. Great experience and fast payouts!',
+    },
+    {
+        name: 'Marcus Lee',
+        role: 'CTO',
+        company: 'ByteWave Solutions',
+        image: '/assets/images/png/testimonials-card-profile-img-2.webp',
+        feedback: 'Super intuitive platform. We were able to sell unused licenses and recover value instantly.',
+    },
+];

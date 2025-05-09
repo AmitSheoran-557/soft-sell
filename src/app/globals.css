@@ -6,3 +6,19 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+
+@layer base {
+
+    /* Set default light theme */
+    body {
+        background-color: #ffffff;
+        color: #000000 !important;
+    }
+
+    /* Set dark theme */
+    .dark body {
+        background-color: #000000 !important;
+        color: white !important;
+
+    }
+}

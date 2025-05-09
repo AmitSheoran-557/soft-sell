@@ -19,7 +19,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="py-16 px-4 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100" id="contact">
+        <div className="2xl:py-36 xl:py-28 lg:py-20 md:py-16 py-12 px-4" id="contact">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Get In Touch</h2>
             <div className="max-w-[1240px] mx-auto w-full">
                 <div className="flex flex-wrap mx-auto w-full justify-content-center">
@@ -27,25 +27,25 @@ const Contact = () => {
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-full">
                             <div>
                                 <label className="block mb-1">Name</label>
-                                <input {...register('name', { required: 'Name is required' })} type="text" className="w-full p-3 rounded bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 outline-none dark:border-zinc-700" />
+                                <input {...register('name', { required: 'Name is required' })} type="text" className="w-full p-3 rounded bg-white/10 border border-zinc-300 outline-none dark:border-zinc-700" />
                                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                             </div>
 
                             <div>
                                 <label className="block mb-1">Email</label>
-                                <input {...register('email', { required: 'Email is required', pattern: { value: /\S+@\S+\.\S+/, message: 'Enter a valid email address', } })} type="email" className="w-full p-3 rounded bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 outline-none dark:border-zinc-700" />
+                                <input {...register('email', { required: 'Email is required', pattern: { value: /\S+@\S+\.\S+/, message: 'Enter a valid email address', } })} type="email" className="w-full p-3 rounded bg-white/10 border border-zinc-300 outline-none dark:border-zinc-700" />
                                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                             </div>
 
                             <div>
                                 <label className="block mb-1">Company</label>
-                                <input {...register('company', { required: 'Company name is required' })} type="text" className="w-full p-3 rounded bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 outline-none dark:border-zinc-700" />
+                                <input {...register('company', { required: 'Company name is required' })} type="text" className="w-full p-3 rounded bg-white/10 border border-zinc-300 outline-none dark:border-zinc-700" />
                                 {errors.company && <p className="text-red-500 text-sm mt-1">{errors.company.message}</p>}
                             </div>
 
                             <div>
                                 <label className="block mb-1">License Type</label>
-                                <select {...register('license', { required: 'License type is required' })} className="w-full p-3 rounded bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 outline-none dark:border-zinc-700" >
+                                <select {...register('license', { required: 'License type is required' })} className="w-full p-3 rounded bg-white/10 border border-zinc-300 outline-none dark:border-zinc-700" >
                                     <option value="">Select type</option>
                                     <option value="Windows">Windows</option>
                                     <option value="Adobe">Adobe</option>
@@ -57,11 +57,11 @@ const Contact = () => {
 
                             <div>
                                 <label className="block mb-1">Message</label>
-                                <textarea {...register('message', { required: 'Message is required' })} rows="4" className="w-full p-3 rounded max-h-44 min-h-20 bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 outline-none dark:border-zinc-700" />
+                                <textarea {...register('message', { required: 'Message is required' })} rows="4" className="w-full p-3 rounded max-h-44 min-h-20 bg-white/10 border border-zinc-300 outline-none dark:border-zinc-700" />
                                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                             </div>
 
-                            <button type="submit" className="py-2 px-6 lg:text-lg rounded-sm border-blue-500 border-1 hover:border-transparent bg-transparent text-white hover:bg-white hover:text-black transition-all ease-linear duration-300">
+                            <button type="submit" className="py-2 px-6 lg:text-lg rounded-sm border-blue-500 border-1 hover:border-transparent bg-transparent hover:bg-white hover:text-black transition-all ease-linear duration-300">
                                 Submit
                             </button>
                         </form>
@@ -73,19 +73,19 @@ const Contact = () => {
                                 <div className="flex lg:gap-8 md:gap-12 gap-8 lg:flex-col max-lg:flex-wrap lg:pt-2">
                                     <div>
                                         <h4 className="font-semibold">{CONTACT_DATA_LIST.location.title}</h4>
-                                        <p className=' '>{CONTACT_DATA_LIST.location.content}</p>
+                                        <p>{CONTACT_DATA_LIST.location.content}</p>
                                     </div>
 
                                     <div>
                                         <h4 className="font-semibold">{CONTACT_DATA_LIST.email.title}</h4>
-                                        <Link href={CONTACT_DATA_LIST.email.href} className=" hover:text-white/80 hover:underline">
+                                        <Link href={CONTACT_DATA_LIST.email.href} className="hover:text-white/80 hover:underline">
                                             {CONTACT_DATA_LIST.email.content}
                                         </Link>
                                     </div>
 
                                     <div>
                                         <h4 className="font-semibold">{CONTACT_DATA_LIST.phone.title}</h4>
-                                        <Link href={CONTACT_DATA_LIST.phone.href} className=" hover:text-white/80 hover:underline">
+                                        <Link href={CONTACT_DATA_LIST.phone.href} className="hover:text-white/80 hover:underline">
                                             {CONTACT_DATA_LIST.phone.content}
                                         </Link>
                                     </div>
@@ -93,8 +93,8 @@ const Contact = () => {
                             </div>
                             <div className="flex gap-4 lg:pt-10 pt-6">
                                 {SOCIAL_LINKS.map((item, index) => (
-                                    <Link key={index} class="rounded-full" href={item.href} target="_blank">
-                                        <div class="lg:px-2 px-1 lg:py-2 py-1 border rounded-full 2xl:size-10 xl:size-11 lg:size-10 size-7 hover:bg-white/30 duration-300 ease-linear hover:border-black/40 flex justify-center items-center">
+                                    <Link key={index} className="rounded-full hover:scale-110 transition-all ease-linear duration-300" href={item.href} target="_blank">
+                                        <div className="lg:px-2 px-1 lg:py-2 py-1 border rounded-full 2xl:size-10 xl:size-11 lg:size-10 size-7 bg-black duration-300 ease-linear hover:border-black/40 flex justify-center items-center">
                                             {item.icon}
                                         </div>
                                     </Link>
